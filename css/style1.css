@@ -1,0 +1,76 @@
+/*Onsitus.it - css orizzontale accordion gratuito - esempio 14/free css horizontal accordion - example 14:
+Altri menu gratuiti/Other free css menu:
+http://css.flepstudio.org/css/css-menu/
+Se usate questo template, grazie per lasciare queste informazione o un link back a onsitus.it è sempre il benvenuto
+If you use this template, thank you to leave those information or a link back to onsitus.it is always welcome*/
+body{
+background-color:#000;
+}
+#slide_orizzontale{
+width:450px;
+padding:10px;
+overflow:hidden;
+position:relative;
+background-color:#454545;
+font-family:Arial, "Sans Serif";
+font-size:11px;
+color:#FFF;
+}
+#slide_orizzontale a{
+display:block;
+width:25px;
+height:270px;
+position:relative;
+float:left;
+overflow:hidden;
+background:#454545 url(../img/a_bg.jpg) repeat-y top left;
+text-decoration:none;
+color:#FFF;
+}
+#apertura{
+position:absolute;
+top:10px;
+left:110px;
+}
+.title, .background_img, .background_span, .description{
+display:block;
+position:absolute;
+cursor:default;
+}
+.title{
+width:25px;
+bottom:10px;
+left:0;
+text-align:center;
+}
+.background_img{
+width:305px;
+height:250px;
+top:10px;
+left:35px;
+border:none;
+}
+.background_span{
+width:265px;
+height:210px;
+top:30px;
+left:55px;
+background-color:#000;
+opacity:0.6;
+filter: alpha(opacity=60);
+}
+.description{
+width:245px;
+height:190px;
+top:40px;
+left:65px;
+text-align:justify;
+overflow:hidden;
+}
+.description b{
+display:block;
+font-size:13px;
+}
+#slide_orizzontale a:hover{
+width:350px;
+}

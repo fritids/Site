@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteBase /
+Options -Indexes
+php_value default_charset UTF-8
+ErrorDocument 403 "Sorry can't allow you access today, 403 Status Codes Apache"
+ErrorDocument 404 "Oops..."
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^city/([0-9]+)$ city.php?city=$1
+RewriteRule ^city/([0-9]+)/$ city.php?city=$1
+
+RewriteRule ^profile/(.*)$ profile.php?username=$1
+RewriteRule ^profile/(.*)/$ profile.php?username=$1
